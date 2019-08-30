@@ -1,0 +1,8 @@
+README.md
+excellentpandas.py
+setup.py
+excellentpandas.egg-info/PKG-INFO
+excellentpandas.egg-info/SOURCES.txt
+excellentpandas.egg-info/dependency_links.txt
+excellentpandas.egg-info/requires.txt
+excellentpandas.egg-info/top_level.txt
