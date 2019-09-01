@@ -1,6 +1,8 @@
 import pandas as pd
 import xlwings as xw
 
+__version__ = '0.1.0'
+
 
 def show_in_excel(
     df, return_df=False, activate_excel=True, print_info=False, max_cols=None
