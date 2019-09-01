@@ -1,7 +1,7 @@
 import pandas as pd
 import xlwings as xw
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def show_in_excel(
