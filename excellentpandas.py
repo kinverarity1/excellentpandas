@@ -1,4 +1,5 @@
 import pandas as pd
+from pandas.core.dtypes.common import is_object_dtype
 import xlwings as xw
 
 __version__ = '0.1.1'
@@ -18,6 +19,9 @@ def show_in_excel(
     else:
         tmp_df = df
     book = xw.Book()
+    for col, dtype in tmp_df.dtypes.iteritems():
+        if is_object_dtype(dtype):
+            tmp_df[col] = tmp_df[col].astype(str)
     book.sheets[0].range("A1").value = tmp_df
     if activate_excel:
         book.activate(steal_focus=True)
